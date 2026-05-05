@@ -1,4 +1,4 @@
-// Sidebar Wayfinder — replaces Roam's "Shortcuts" sidebar header with a row of icon tabs.
+// Sidebar Reimagined — replaces Roam's "Shortcuts" sidebar header with a row of icon tabs.
 // Each tab swaps the page list shown beneath the header. We don't re-render Roam's own
 // shortcuts list; we insert sibling lists next to it and toggle visibility. A
 // MutationObserver re-injects after Roam rebuilds the sidebar (e.g. graph switch).
@@ -495,7 +495,7 @@ export default {
     }
 
     api.settings.panel.create({
-      tabTitle: "Sidebar Wayfinder",
+      tabTitle: "Sidebar Reimagined",
       settings: [
         {
           id: "show-recent",
