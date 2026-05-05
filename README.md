@@ -4,10 +4,7 @@ Sidebar Reimagined transforms the Shortcuts section of Roam's left sidebar into 
 
 The idea is simple: your sidebar is prime real estate, and Shortcuts alone doesn't make the most of it. Sidebar Reimagined keeps your shortcuts exactly as they are, but adds new views alongside them — recent activity, random rediscovery, pages from this day in previous years, your most referenced pages, and quick access to system configuration.
 
-<p align="center">
-  <img src="random.png" width="48%" alt="Sidebar Reimagined with Roam Studio theme, showing Random view" />
-  <img src="shortcuts.png" width="48%" alt="Sidebar Reimagined with default Roam theme, showing Recent view" />
-</p>
+![Sidebar Reimagined screenshot with Roam Studio themes, showing different views](screenshot.webp)
 
 ## Tabs
 
