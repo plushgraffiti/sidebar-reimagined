@@ -1,0 +1,110 @@
+/* Sidebar Tabs — icon tab header */
+.sidebar-tabs-header.title {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  margin-top: 8px !important;
+  margin-bottom: 12px !important;
+  font-size: 0 !important;
+}
+
+.sidebar-tab-btn::before {
+  content: none !important;
+  display: none !important;
+}
+
+.sidebar-tab-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+  position: relative;
+}
+
+.sidebar-tab-btn .sidebar-tab-tooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 6px;
+  padding: 4px 8px;
+  background: var(--bg-color, #394b59);
+  color: var(--fg-color, #f5f8fa);
+  font-size: 12px !important;
+  font-weight: normal;
+  white-space: nowrap;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  pointer-events: none;
+}
+
+.sidebar-tab-btn:hover .sidebar-tab-tooltip {
+  display: block;
+  animation: sidebar-tab-tooltip-fade 0s 1s forwards;
+  opacity: 0;
+}
+
+@keyframes sidebar-tab-tooltip-fade {
+  to { opacity: 1; }
+}
+
+.sidebar-tab-btn:hover,
+.sidebar-tab-btn.sidebar-tab-btn-active {
+  background-color: var(--bg-color-hover, rgba(167, 182, 194, 0.3));
+}
+
+.sidebar-tab-btn .sidebar-tab-icon {
+  opacity: 0.6;
+  width: 16px !important;
+  height: 16px !important;
+  min-width: 16px !important;
+  min-height: 16px !important;
+  font-size: 16px !important;
+  display: inline-block !important;
+  visibility: visible !important;
+  line-height: 1;
+  transition: opacity 0.15s;
+}
+
+.sidebar-tab-btn:hover .sidebar-tab-icon,
+.sidebar-tab-btn .sidebar-tab-icon.sidebar-tab-active {
+  opacity: 1.0;
+}
+
+/* Roam Studio feather icon support — applied via JS when CSS masks are detected */
+.sidebar-tab-icon-masked {
+  background-color: currentColor;
+  color: transparent;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.sidebar-tab-icon-masked::before {
+  content: "" !important;
+  display: none !important;
+}
+
+/* Subtitle (year, backlink count) */
+.sidebar-tabs-subtitle {
+  opacity: 0.5;
+  font-size: 0.85em;
+  margin-left: 4px;
+}
+
+/* Empty state */
+.sidebar-tabs-empty {
+  padding: 4px 0;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+/* Hide helper */
+.sidebar-tabs-hidden {
+  display: none !important;
+}
